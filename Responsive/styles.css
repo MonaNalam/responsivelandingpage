@@ -1,0 +1,141 @@
+/* styles.css */
+body {
+  font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Slightly lighter background color */
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #333; /* Darkened background color */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff; /* Changed text color to white */
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Darkened hover background color */
+}
+
+.section {
+  padding: 80px 20px; /* Slightly reduced top padding */
+  margin-top: 50px; /* Reduced margin top for fixed nav */
+}
+
+.responsive-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 20px 0;
+  transition: transform 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+.responsive-img:hover {
+  transform: scale(1.05); /* Increased scale on hover */
+}
+
+#home {
+  background-color: #f5fbfc; /* Lightened background color */
+}
+
+#about {
+  background-color: #fdf5f5; /* Lightened background color */
+}
+
+#services {
+  background-color: #f5f5fd; /* Lightened background color */
+}
+
+#contact {
+  background-color: #f5fdf5; /* Lightened background color */
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service-item {
+  width: calc(33.33% - 20px); /* Adjusted width for better spacing */
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd; /* Slightly lighter border color */
+  border-radius: 8px; /* Increased border radius for smoother edges */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover effect for headings */
+h1:hover,
+h2:hover {
+  color: #555; /* Darkened text color on hover */
+}
+
+/* Adjustments for Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #555;
+}
